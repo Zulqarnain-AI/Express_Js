@@ -10,7 +10,7 @@ function checkRoute(req,res,next){
     next();
 
 }
-app.use(checkRoute)//middleware called
+app.use(checkRoute)
 
 
 app.get('/',(req,res)=>{

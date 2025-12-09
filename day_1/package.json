@@ -1,0 +1,25 @@
+{
+  "name": "express_js",
+  "version": "1.0.0",
+  "description": "firs cource on express",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zulqarnain-AI/Express_Js.git"
+  },
+  "author": "zulqarnain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zulqarnain-AI/Express_Js/issues"
+  },
+  "homepage": "https://github.com/Zulqarnain-AI/Express_Js#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}

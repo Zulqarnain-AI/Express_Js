@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column;text-align: center;">
+        <h1>student data</h1>
+        
+
+        <table border="2px">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>add</th>
+                <th>delete</th>
+            </tr>
+            <% data.forEach(item=>{ %>
+                <tr>
+                    <td>
+                        <%= item.id %>
+                    </td>
+                    <td>
+                        <%= item.name %>
+                    </td>
+                    <td>
+                        <%= item.age %>
+                    </td>
+                    <td>
+                        <a href="/delete/<%= item._id %>">delete</a>
+                    </td>
+                    <td>
+                        <a href="/add">add</a>
+                    </td>
+                </tr>
+
+                <%})%>
+        </table>
+        <div>
+            <button
+                style=" background-color: rgb(99, 199, 138);justify-content: center;display: inline;border-radius: 3px;margin: 5px;"><a href="/" style=" text-decoration: dashed; color: black;font-weight: bold;font-size: xx-large;">Refresh</a></button>
+        </div>
+
+    </div>
+</body>
+
+</html>

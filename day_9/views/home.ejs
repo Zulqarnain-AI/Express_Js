@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+
+<body>
+    <div style="display: flex;flex-direction: column;text-align: center;">
+        <h1>student details</h1>
+        <button><a href="/">refresh</a></button>
+        <button><a href="/add_student">add new student</a></button>
+        <table border="2px">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <% data.forEach(item=>{ %>
+                <tr>
+                    <th>
+                        <%= item.id %>
+                    </th>
+                    <th>
+                        <%= item.name %>
+                    </th>
+                    <th>
+                        <%= item.age %>
+                    </th>
+                    <th><a href="/edit/<%= item._id %>">edit</a></th>
+                    <th><a href="/delete/<%= item._id %>">delelte</a></th>
+                </tr>
+
+                <% }) %>
+        </table>
+    </div>
+</body>
+
+</html>
